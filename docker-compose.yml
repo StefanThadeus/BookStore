@@ -1,0 +1,31 @@
+# Version of the standard used to write the YAML file
+version: '3.9'
+# List of containers to be built
+services:
+  mariadb:
+    image: mariadb:latest
+    restart: always
+    container_name: book_mariadb
+    volumes:
+      - db_book_app:/var/lib/mysql
+      - ./config/script/initDB.sql:/docker-entrypoint-initdb.d/01.sql
+    ports:
+      - "3306:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=root
+    networks:
+      - book_network
+
+  BookStore:
+    image: "sradenkovic/bookstore-app:latest"
+    ports:
+      - "80:80"
+    networks:
+      - book_network
+
+volumes:
+  db_book_app:
+    name: db_book_app
+
+networks:
+  book_network:

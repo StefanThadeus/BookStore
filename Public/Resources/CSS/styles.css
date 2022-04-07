@@ -1,0 +1,111 @@
+.container{
+    margin-top: 2rem;
+}
+
+.heading{
+    text-align: left;
+    margin: 3rem 0;
+}
+
+.vertical-center{
+    vertical-align: middle;
+}
+
+.align-left{
+    text-align: left;
+}
+
+.align-right{
+    text-align: right;
+}
+
+.button-margin{
+    margin: 1.5rem 0 0;
+    padding: 0.5rem 2rem;
+}
+
+.add-button{
+    margin: 1.5rem 0 0;
+    width: 50px;
+}
+
+.add-button:hover{
+    filter: brightness(70%);
+}
+
+.edit-button{
+    width: 40px;
+    margin-right: 10px;
+    filter: invert(51%) sepia(100%) saturate(2790%) hue-rotate(184deg) brightness(100%) contrast(92%);
+}
+
+.edit-button:hover{
+    filter: invert(51%) sepia(100%) saturate(2790%) hue-rotate(184deg) brightness(70%) contrast(92%);
+}
+
+.remove-button{
+    width: 40px;
+}
+
+.remove-button:hover{
+    filter: brightness(70%);
+}
+
+.avatar-image{
+    width: 2rem;
+    margin-right: 1rem;
+}
+
+.count-circle{
+    background-color: rgb(207, 226, 255);
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    padding-top: 0.45rem;
+    float: right;
+}
+
+.form-group{
+    padding: 0.5rem 0;
+}
+
+.form-background{
+    margin: 10% 30% 0;
+    background-color: rgb(250, 250, 250);
+    border-radius: 20px;
+}
+
+.form-button{
+    margin: 0;
+    padding: 0;
+    display: inline;
+}
+
+.error-message{
+    color: red;
+}
+
+.warning-icon{
+    width: 3rem;
+    height: 3rem;
+    vertical-align: bottom;
+}
+
+.button-inline-form{
+    display: inline;
+}
+
+.author-link{
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+.author-name-color{
+    color: #0d6efd;
+}
+
+.btn-navigation{
+    float: right;
+    vertical-align: middle;
+}
